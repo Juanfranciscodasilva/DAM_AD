@@ -1,0 +1,13 @@
+for $zona in /zonas/zona
+order by $zona/cod_zona
+return 
+<zona>
+{$zona/cod_zona}
+{$zona/nombre}
+<producto_con_menos_stock>{
+let $menorStock := min(/productos/produc[cod_zona/text()=$zona/cod_zona]/stock_actual)
+for $prod in /productos/produc[cod_zona/text()=$zona/cod_zona]
+return $prod[stock_actual=$menorStock]/denominacion
+}</producto_con_menos_stock>
+</zona>
+ 

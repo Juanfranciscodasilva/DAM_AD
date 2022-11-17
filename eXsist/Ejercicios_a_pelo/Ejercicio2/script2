@@ -1,0 +1,1 @@
+/sucursales/sucursal/concat(@codigo," tiene un número de cuentas de ahorro de: ",count(cuenta[@tipo="AHORRO"]))

@@ -1,0 +1,1 @@
+/sucursales/sucursal[@codigo="SUC3"]/cuenta[@tipo="PENSIONES"]

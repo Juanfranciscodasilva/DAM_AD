@@ -1,0 +1,1 @@
+/sucursales/count(sucursal[contains(poblacion, "Madrid")])

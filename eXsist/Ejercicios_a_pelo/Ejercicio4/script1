@@ -1,0 +1,9 @@
+for $zona in /zonas/zona
+order by $zona/cod_zona
+return 
+<zona>
+{$zona/cod_zona}
+{for $prod in /productos/produc[cod_zona/text()=$zona/cod_zona]
+return <producto>{$prod/denominacion | $prod/precio | $prod/nombre}</producto>}
+</zona>
+ 

@@ -1,0 +1,1 @@
+/sucursales/sucursal[count(cuenta)>3]/director | /sucursales/sucursal[count(cuenta)>3]/poblacion

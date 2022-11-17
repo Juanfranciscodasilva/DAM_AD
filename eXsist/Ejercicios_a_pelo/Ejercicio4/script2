@@ -1,0 +1,8 @@
+for $zona in /zonas/zona
+order by $zona/cod_zona
+return 
+<zona>
+{$zona/nombre}
+<num_productos>{count(/productos/produc[cod_zona/text()=$zona/cod_zona])}</num_productos>
+</zona>
+ 
